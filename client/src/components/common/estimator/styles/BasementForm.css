@@ -1,0 +1,138 @@
+.basement-section {
+  background-color: #f9f9fc;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #eef0f5;
+  margin-bottom: 1.5rem;
+}
+
+.basement-section.plain {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.basement-section-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.basement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.room-manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eef0f5;
+  padding-bottom: 8px;
+}
+
+.room-manager-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.add-room-btn-small {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #007bff;
+  background: #f0f7ff;
+  border: 1px solid #cce5ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-room-btn-small:hover {
+  background: #e6f7ff;
+  border-color: #b8daff;
+}
+
+.add-room-btn-small:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.room-item-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.room-item-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  min-width: 70px;
+}
+
+.room-select {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.remove-room-btn {
+  color: #ff4d4f;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.remove-room-btn:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .basement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.basement-helper-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.basement-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
