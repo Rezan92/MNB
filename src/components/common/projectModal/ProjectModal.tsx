@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProjectModal.css';
 import type { Project } from '../projectCard/ProjectCard';
 import { X } from 'lucide-react';

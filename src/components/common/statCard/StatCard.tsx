@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './StatCard.css';
 import { type LucideIcon } from 'lucide-react';
 

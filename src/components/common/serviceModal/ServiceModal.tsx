@@ -1,11 +1,10 @@
-import React from 'react';
 import './ServiceModal.css';
-import { X } from 'lucide-react';
+import { X, type LucideIcon } from 'lucide-react';
 
 export type Service = {
 	title: string;
 	image: string;
-	icon: React.ElementType;
+	icon: LucideIcon;
 	description: string;
 	details: string[];
 };
