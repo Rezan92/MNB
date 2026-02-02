@@ -8,12 +8,12 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { toggleMobileMenu, closeMobileMenu } from '@/store/slices/uiSlice';
 
 const navLinks = [
-	{ label: 'Home', to: '/' },
-	{ label: 'About', to: '/about' },
-	{ label: 'Services', to: '/services' },
-	{ label: 'Projects', to: '/projects' },
-	{ label: 'Blog', to: '/blog' },
-	{ label: 'Contact', to: '/contact' },
+	{ label: 'Hem', to: '/' },
+	{ label: 'Om oss', to: '/about' },
+	{ label: 'Tjänster', to: '/services' },
+	{ label: 'Projekt', to: '/projects' },
+	{ label: 'Blogg', to: '/blog' },
+	{ label: 'Kontakt', to: '/contact' },
 ];
 
 const Navbar = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
 						to='/contact'
 						variant='dark'
 					>
-						Inquire Now
+						Kontakta oss
 					</Button>
 				</div>
 
@@ -61,14 +61,9 @@ const Navbar = () => {
 					>
 						{<Menu size={28} />}
 					</button>
-					<span className='nav-mobile-title'>Menu</span>
+					<span className='nav-mobile-title'>Meny</span>
 				</div>
 			</div>
-
-			{/* --- Mobile Menu Dropdown (Animated) --- */}
-			{/* This is the sliding panel. We apply the 'open' class based on state
-        to trigger the CSS animation.
-      */}
 			<div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
 				<ul className='mobile-links-list'>
 					{navLinks.map((link) => (

@@ -13,17 +13,17 @@ function TopBar() {
 					</div>
 					<div className='contact-wrapper'>
 						<ContactInfoBlock
-							icon={Phone} // You can also use MessageSquare here if you prefer
-							bold='Call or Text: '
-							title='773-799-0006'
-							subtitle='Mon-Fri, 8:00 AM - 6:00 PM'
+							icon={Phone}
+							bold='Ring eller SMS: '
+							title='072-911 25 31'
+							subtitle='Mån-Fre, 08:00 - 18:00'
 						/>
 					</div>
 					<div className='contact-wrapper'>
 						<ContactInfoBlock
 							icon={MapPin}
-							title='Our Service Area'
-							subtitle='Serving Wheaton, Lombard & Chicagoland Suburbs'
+							title='Vårt Serviceområde'
+							subtitle='Vi betjänar hela Stockholm med omnejd'
 						/>
 					</div>
 				</div>

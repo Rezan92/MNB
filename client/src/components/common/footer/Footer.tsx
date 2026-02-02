@@ -42,11 +42,11 @@ export const Footer: React.FC = () => {
 			<div className='footer-grid'>
 				{/* Column 1: About */}
 				<div className='footer-column'>
-					<h3 className='footer-column-title'>ABOUT</h3>
+					<h3 className='footer-column-title'>OM OSS</h3>
 					<p className='footer-about-text'>
-						Ray's Pro Finish specializes in expert drywall repair and
-						high-quality interior painting. We're committed to delivering a
-						flawless finish and professional service to every homeowner.
+						Stjärn Bygg & Måleri specialiserar sig på professionellt måleri och
+						högkvalitativt snickeri. Vi strävar efter att leverera ett felfritt
+						resultat och personlig service till varje kund i Stockholm.
 					</p>
 					<div className='footer-social-icons'>
 						<a
@@ -78,66 +78,69 @@ export const Footer: React.FC = () => {
 
 				{/* Column 2: Links */}
 				<div className='footer-column'>
-					<h3 className='footer-column-title'>LINKS</h3>
+					<h3 className='footer-column-title'>LÄNKAR</h3>
 					<nav className='footer-links-list'>
 						<FooterLink
 							to='/projects'
-							label='Projects'
+							label='Projekt'
 						/>
 						<FooterLink
 							to='/about'
-							label='About Us'
+							label='Om oss'
 						/>
 						<FooterLink
 							to='/services'
-							label='Services'
+							label='Tjänster'
 						/>
 						<FooterLink
 							to='/blog'
-							label='Blog Posts'
+							label='Blogg'
 						/>
 						<FooterLink
 							to='/contact'
-							label='Contact'
+							label='Kontakt'
 						/>
 					</nav>
 				</div>
 
 				{/* Column 3: Services */}
 				<div className='footer-column'>
-					<h3 className='footer-column-title'>SERVICES</h3>
+					<h3 className='footer-column-title'>TJÄNSTER</h3>
 					<div className='footer-links-list'>
-						{/* You can update these links as needed */}
 						<FooterLink
 							to='/services'
-							label='Interior Painting'
+							label='Måleri (Inne & Ute)'
 						/>
 						<FooterLink
 							to='/services'
-							label='Drywall Repair & Patching'
+							label='Snickeri & Träarbete'
 						/>
 						<FooterLink
 							to='/services'
-							label='Drywall Installation'
+							label='Golvläggning'
+						/>
+						<FooterLink
+							to='/services'
+							label='Totalrenovering'
 						/>
 					</div>
 				</div>
 
-				{/* Column 4: Have a Questions? */}
+				{/* Column 4: Questions */}
 				<div className='footer-column'>
-					<h3 className='footer-column-title'>HAVE A QUESTIONS?</h3>
+					<h3 className='footer-column-title'>HAR DU FRÅGOR?</h3>
 					<div className='footer-contact-list'>
 						<ContactItem
 							icon={<MapPin size={20} />}
-							text='Service Area: Wheaton, Lombard & Chicagoland Suburbs'
+							text='Serviceområde: Stockholm med omnejd'
 						/>
 						<ContactItem
 							icon={<Phone size={20} />}
-							text='(773) 799-0006 (Call or Text)'
+							text='072-911 25 31 (Ring eller SMS)'
 						/>
 						<ContactItem
 							icon={<Mail size={20} />}
-							text='info@yourdomain.com'
+							text='ninos.yousef@outlook.com'
 						/>
 					</div>
 				</div>
