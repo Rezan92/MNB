@@ -93,10 +93,6 @@ export const Footer: React.FC = () => {
 							label='Tjänster'
 						/>
 						<FooterLink
-							to='/blog'
-							label='Blogg'
-						/>
-						<FooterLink
 							to='/contact'
 							label='Kontakt'
 						/>

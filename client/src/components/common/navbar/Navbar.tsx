@@ -12,7 +12,6 @@ const navLinks = [
 	{ label: 'Om oss', to: '/about' },
 	{ label: 'Tjänster', to: '/services' },
 	{ label: 'Projekt', to: '/projects' },
-	{ label: 'Blogg', to: '/blog' },
 	{ label: 'Kontakt', to: '/contact' },
 ];
 
