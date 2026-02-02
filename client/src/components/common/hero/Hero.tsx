@@ -1,10 +1,8 @@
 import './Hero.css';
 import { Button } from '../button/Button';
-// Use the @ alias for a clean path to assets
 import heroImage from '@/assets/hero/Hero.png';
 
 const Hero = () => {
-	// We apply the background image via inline style for dynamic import
 	const heroStyle = {
 		backgroundImage: `url(${heroImage})`,
 	};
@@ -15,16 +13,17 @@ const Hero = () => {
 				className='hero'
 				style={heroStyle}
 			>
-				<div className='hero-overlay'></div> {/* Dark overlay */}
+				<div className='hero-overlay'></div>
 				<div className='hero-container'>
 					<div className='hero-content'>
 						<h1 className='hero-title'>
-							EXPERT DRYWALL REPAIR
-							<br />& INTERIOR PAINTING
+							PROFFSIGT MÅLERI
+							<br />& SNICKERI I STOCKHOLM
 						</h1>
 						<p className='hero-subtitle'>
-							From seamless drywall patching and installation to a flawless,
-							high-quality paint finish, we make your walls look perfect.
+							Vi levererar högkvalitativt hantverk inom måleri, snickeri och
+							renovering. Från första penseldraget till färdigställt bygge – vi
+							skapar hem att trivas i.
 						</p>
 						<div className='hero-actions'>
 							<Button
@@ -32,14 +31,14 @@ const Hero = () => {
 								variant='primary'
 								className='hero-button'
 							>
-								Our Services
+								Våra Tjänster
 							</Button>
 							<Button
-								to='/estimator'
+								to='/contact'
 								variant='light'
 								className='hero-button'
 							>
-								Get an Instant Estimate
+								Få en Kostnadsfri Offert
 							</Button>
 						</div>
 					</div>

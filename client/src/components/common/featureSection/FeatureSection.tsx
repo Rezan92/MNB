@@ -1,30 +1,30 @@
 import './FeatureSection.css';
-import { PaintRoller, Smile, Wand2 } from 'lucide-react'; // Icons from screenshot
+import { PaintRoller, Smile, Wand2 } from 'lucide-react';
 import { FeatureCard } from '../featureCard/FeatureCard';
 
 export const FeatureSection = () => {
 	const cardData = [
 		{
 			icon: Wand2,
-			title: 'Precision Drywall Repair',
+			title: 'Kvalitetssnickeri',
 			description:
-				'From nail holes to water damage, we make wall imperfections vanish. Our seamless patching and texture matching create a flawless surface.',
+				'Allt från montering av kök och dörrar till avancerade träkonstruktioner. Vi bygger med precision och hållbara material.',
 			variant: 'dark',
 			delay: '0ms',
 		},
 		{
 			icon: PaintRoller,
-			title: 'High-Quality Interior Painting',
+			title: 'Professionellt Måleri',
 			description:
-				'A great paint job is all in the details. We guarantee clean lines, sharp edges, and a smooth, durable finish that brightens your home.',
+				'Vi garanterar perfekta ytor, skarpa linjer och en hållbar finish som lyfter hela rummet. Inne- som utemålning.',
 			variant: 'primary',
 			delay: '100ms',
 		},
 		{
 			icon: Smile,
-			title: 'Clean & Reliable Service',
+			title: 'Trygg & Ren Service',
 			description:
-				'We respect your time and your space. We show up on schedule, protect your furniture, and leave your home spotless.',
+				'Vi respekterar ditt hem. Vi kommer i tid, arbetar effektivt och lämnar alltid arbetsplatsen skinande ren efter oss.',
 			variant: 'dark',
 			delay: '200ms',
 		},

@@ -5,17 +5,18 @@ export const RequestQuoteSection = () => {
 	return (
 		<section className='request-quote-section'>
 			<div className='request-quote-content'>
-				<h2 className='request-quote-title'>Ready to Transform Your Space?</h2>
+				<h2 className='request-quote-title'>
+					Redo att förverkliga ditt projekt?
+				</h2>
 				<p className='request-quote-description'>
-					Let's talk about your project. Whether it's a single wall patch or a
-					full interior paint job, we provide fast, free, and no-obligation
-					estimates.
+					Kontakta oss idag för att diskutera dina idéer. Vi erbjuder snabba och
+					kostnadsfria offerter för både små och stora uppdrag.
 				</p>
 				<Button
 					variant='primary'
 					to='/contact'
 				>
-					GET A FREE ESTIMATE
+					FÅ EN GRATIS OFFERT
 				</Button>
 			</div>
 		</section>

@@ -1,12 +1,13 @@
 import React from 'react';
-import './ServiceModal.css'; // Import the new CSS
+import './ServiceModal.css';
 import { X } from 'lucide-react';
 
-// Define the shape of a Service
 export type Service = {
 	title: string;
 	image: string;
-	details: string[]; // An array of paragraphs for the description
+	icon: React.ElementType;
+	description: string;
+	details: string[];
 };
 
 type ServiceModalProps = {
@@ -39,7 +40,6 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
 				<div className='modal-text-content'>
 					<h2 className='modal-title'>{service.title}</h2>
 					<div className='modal-divider'></div>
-					{/* Loop over the details array and render each as a paragraph */}
 					{service.details.map((paragraph, index) => (
 						<p
 							key={index}

@@ -6,45 +6,44 @@ import patchingImage from '@/assets/serviceSection/Patching.png';
 import installationImage from '@/assets/serviceSection/installation.png';
 import type { Service } from '../serviceModal/ServiceModal';
 
-// Redux
 import { useAppDispatch } from '@/store/hooks';
 import { openServiceModal } from '@/store/slices/uiSlice';
 
 const servicesData: Service[] = [
 	{
-		title: 'Interior Painting',
+		title: 'Måleritjänster',
 		image: paintingImage,
 		icon: PaintRoller,
 		description:
-			'From walls and ceilings to trim and doors, we provide a clean, high-quality paint job that brings new life to your space.',
+			'Högkvalitativt måleri för både interiör och exteriör. Vi ger dina väggar, tak och snickerier ett nytt liv.',
 		details: [
-			'A high-quality paint job is the fastest way to transform your space, but the secret is in the prep work.',
-			'Our process is meticulous. We start by protecting your floors, furniture, and fixtures. We then prepare all surfaces by filling nail holes, caulking cracks, and sanding imperfections for a perfectly smooth base.',
-			'Using premium paints and professional techniques, we deliver sharp, clean lines and a durable, even finish on all walls, ceilings, and trim. Your satisfaction is our guarantee.',
+			'Ett perfekt måleriprojekt handlar om 90% förarbete. Vi tar inget lätt på underlaget.',
+			'Vi täcker noggrant golv och möbler, spacklar, slipar och grundar för att säkerställa en helt slät yta innan vi applicerar premiumfärg.',
+			'Vi arbetar med de bästa leverantörerna för att garantera ett miljövänligt och hållbart resultat som tål vardagens slitage.',
 		],
 	},
 	{
-		title: 'Drywall Repair & Patching',
+		title: 'Snickeri & Bygg',
 		image: patchingImage,
 		icon: Wand2,
 		description:
-			"Don't let holes, cracks, or water damage ruin your walls. We specialize in seamless patches that make the damage completely disappear.",
+			'Från platsbyggda garderober till montering av kök och altaner. Vi utför allt inom byggnadssnickeri.',
 		details: [
-			'From small nail pops and stress cracks to large holes from plumbing or electrical work, our drywall repair service makes wall damage vanish.',
-			'We specialize in seamless patching. Our process involves securely backing the patch, applying professional-grade tape, and skillfully applying multiple coats of joint compound, feathering the edges to blend perfectly with the existing wall.',
-			'We are experts at matching existing wall textures—whether you have orange peel, knockdown, or a custom finish—so that after priming and painting, the repair is completely invisible.',
+			'Våra snickare har bred kompetens inom både fin- och grovsnickeri, vilket gör att vi kan hantera hela din renovering.',
+			'Vi hjälper dig med allt från att bygga nya innerväggar till att montera komplexa kökslösningar och platsbyggda detaljer.',
+			'Varje projekt planeras noggrant för att optimera både funktion och estetik i ditt hem eller på ditt kontor.',
 		],
 	},
 	{
-		title: 'Drywall Installation',
+		title: 'Golvläggning & Renovering',
 		image: installationImage,
 		icon: Sheet,
 		description:
-			'Finishing a basement or remodeling? We professionally hang, tape, and finish new drywall for perfectly smooth, paint-ready walls.',
+			'Vi lägger alla typer av golv och utför kompletta renoveringar av rum, källare och kontor.',
 		details: [
-			'Perfect for basement finishing, home additions, or extensive remodels. We provide professional drywall installation (hanging) and finishing services.',
-			'Our team expertly hangs and fastens new drywall sheets, ensuring all joints are staggered correctly and screws are set to the proper depth to prevent future pops.',
-			'We then tape, mud, and sand all seams and corners to a Level 4 or Level 5 (perfectly smooth) finish, leaving you with pristine, straight, and durable walls that are ready for primer and paint.',
+			'Golvet är rummets bas. Vi lägger parkett, laminat och trägolv med hög precision för ett resultat som håller i generationer.',
+			'Vi erbjuder även totalentreprenad för mindre projekt där vi samordnar olika yrkesgrupper för att göra din renovering smidig.',
+			'Från rivning till sista list – vi tar hand om hela processen så att du kan fokusera på annat.',
 		],
 	},
 ];
@@ -59,10 +58,8 @@ export const ServicesSection = () => {
 	return (
 		<section className='services-section'>
 			<div className='services-section-header'>
-				<span className='services-section-subtitle'>Our Services</span>
-				<h2 className='services-section-title'>
-					Our Painting & Drywall Services
-				</h2>
+				<span className='services-section-subtitle'>Våra Tjänster</span>
+				<h2 className='services-section-title'>Allt inom Måleri & Bygg</h2>
 			</div>
 
 			<div className='services-section-grid'>
