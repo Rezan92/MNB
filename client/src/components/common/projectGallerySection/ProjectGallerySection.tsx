@@ -2,7 +2,6 @@ import './ProjectGallerySection.css';
 import { ProjectCard } from '../projectCard/ProjectCard';
 import type { Project } from '../projectCard/ProjectCard';
 import { ChevronDown } from 'lucide-react';
-// --- Redux Imports ---
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import {
 	setFilter,
@@ -10,19 +9,15 @@ import {
 	selectActiveFilter,
 	selectProjectCategories,
 } from '@/store/slices/projectsSlice';
-import { openProjectModal } from '@/store/slices/uiSlice'; // <--- Import action
+import { openProjectModal } from '@/store/slices/uiSlice';
 
 export const ProjectGallerySection = () => {
-	// --- Redux State ---
 	const dispatch = useAppDispatch();
 
-	// These "selectors" automatically update the component when data changes
 	const filteredProjects = useAppSelector(selectFilteredProjects);
 	const activeFilter = useAppSelector(selectActiveFilter);
 	const filterCategories = useAppSelector(selectProjectCategories);
 
-	// --- Handlers ---
-	// Just dispatch the action! No local state needed.
 	const handleCardClick = (project: Project) => {
 		dispatch(openProjectModal(project));
 	};
@@ -38,7 +33,6 @@ export const ProjectGallerySection = () => {
 				<h2 className='project-gallery-title'>Ett urval av våra projekt</h2>
 			</div>
 
-			{/* Filter Dropdown */}
 			<div className='project-filter-dropdown-wrapper'>
 				<label
 					htmlFor='project-filter'
@@ -50,7 +44,7 @@ export const ProjectGallerySection = () => {
 					<select
 						id='project-filter'
 						className='project-filter-select'
-						value={activeFilter} // Controlled by Redux
+						value={activeFilter}
 						onChange={handleFilterChange}
 					>
 						{filterCategories.map((category) => (
@@ -69,7 +63,6 @@ export const ProjectGallerySection = () => {
 				</div>
 			</div>
 
-			{/* Project Grid */}
 			<div className='project-gallery-grid'>
 				{filteredProjects.map((project) => (
 					<ProjectCard
@@ -79,8 +72,6 @@ export const ProjectGallerySection = () => {
 					/>
 				))}
 			</div>
-
-			{/* NO MODAL HERE! It is now handled globally by ModalManager in App.tsx */}
 		</section>
 	);
 };

@@ -3,7 +3,6 @@ import './ContactForm.css';
 import { Button } from '../button/Button';
 
 export const ContactForm: React.FC = () => {
-	// In a real app, you would handle form state and submission here
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		alert('Form submitted! (This is a demo)');

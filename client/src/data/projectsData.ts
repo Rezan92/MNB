@@ -4,9 +4,7 @@ import CeilingDamageImage from '@/assets/projectsImages/CeilingDamage.png';
 import DrywallPatchingImage from '@/assets/projectsImages/DrywallPatching.png';
 import GarageFinishingImage from '@/assets/projectsImages/GarageFinishing.png';
 import LivingroomFinishImage from '@/assets/projectsImages/LivingroomFinish.png';
-// import AccentWallImage from '@/assets/projectsImages/AccentWall.png';
 
-// This is now the SINGLE SOURCE OF TRUTH for all projects
 export const projectsData: Project[] = [
 	{
 		id: 1,
