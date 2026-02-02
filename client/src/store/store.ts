@@ -1,11 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import estimatorReducer from './slices/estimatorSlice';
 import uiReducer from './slices/uiSlice';
 import projectsReducer from './slices/projectsSlice';
 
 export const store = configureStore({
 	reducer: {
-		estimator: estimatorReducer,
 		ui: uiReducer,
 		projects: projectsReducer,
 	},
