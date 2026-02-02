@@ -1,13 +1,12 @@
-import React from 'react';
 import './ServiceCard.css';
-import { Icon } from 'lucide-react';
+import { type LucideIcon } from 'lucide-react';
 
 type ServiceCardProps = {
-	icon: Icon;
+	icon: LucideIcon;
 	imageSrc: string;
 	title: string;
 	description: string;
-	onClick: () => void; // ADDED: onClick prop to open the modal
+	onClick: () => void;
 };
 
 export const ServiceCard = ({
@@ -15,7 +14,7 @@ export const ServiceCard = ({
 	imageSrc,
 	title,
 	description,
-	onClick, // ADDED
+	onClick,
 }: ServiceCardProps) => {
 	return (
 		<div className='service-card'>
@@ -25,7 +24,6 @@ export const ServiceCard = ({
 					alt={title}
 					className='service-card-image'
 					onError={(e) => {
-						// Fallback placeholder
 						e.currentTarget.src =
 							'https://placehold.co/400x300/e0e0e0/777?text=Image';
 					}}
@@ -41,7 +39,6 @@ export const ServiceCard = ({
 				<h3 className='service-card-title'>{title}</h3>
 				<p className='service-card-description'>{description}</p>
 
-				{/* UPDATED: This is now a standard <button> that triggers the onClick */}
 				<button
 					onClick={onClick}
 					className='btn dark service-card-button'

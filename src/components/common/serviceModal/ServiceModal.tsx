@@ -15,10 +15,7 @@ type ServiceModalProps = {
 	onClose: () => void;
 };
 
-export const ServiceModal: React.FC<ServiceModalProps> = ({
-	service,
-	onClose,
-}) => {
+export const ServiceModal = ({ service, onClose }: ServiceModalProps) => {
 	return (
 		<>
 			<div

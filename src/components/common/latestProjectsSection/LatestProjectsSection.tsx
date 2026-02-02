@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './LatestProjectsSection.css';
 import { ProjectCard } from '../projectCard/ProjectCard';
 import type { Project } from '../projectCard/ProjectCard';
 import { ProjectModal } from '../projectModal/ProjectModal';
 import { projectsData } from '@/data/projectsData';
 
-// Mock data has been removed from this file
-
 export const LatestProjectsSection = () => {
-	// State to manage the modal
 	const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
 	const handleCardClick = (project: Project) => {
@@ -29,7 +26,6 @@ export const LatestProjectsSection = () => {
 			</div>
 
 			<div className='latest-projects-grid'>
-
 				{projectsData.slice(0, 6).map((project) => (
 					<ProjectCard
 						key={project.id}

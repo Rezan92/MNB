@@ -11,8 +11,7 @@ import {
 } from 'lucide-react';
 import './Footer.css';
 
-// A small sub-component for consistent link styling
-const FooterLink: React.FC<{ to: string; label: string }> = ({ to, label }) => (
+const FooterLink = ({ to, label }: { to: string; label: string }) => (
 	<NavLink
 		to={to}
 		className='footer-link-item'
@@ -25,7 +24,6 @@ const FooterLink: React.FC<{ to: string; label: string }> = ({ to, label }) => (
 	</NavLink>
 );
 
-// A small sub-component for consistent contact info styling
 const ContactItem: React.FC<{ icon: React.ReactNode; text: string }> = ({
 	icon,
 	text,
@@ -40,7 +38,6 @@ export const Footer: React.FC = () => {
 	return (
 		<footer className='footer-section'>
 			<div className='footer-grid'>
-				{/* Column 1: About */}
 				<div className='footer-column'>
 					<h3 className='footer-column-title'>OM OSS</h3>
 					<p className='footer-about-text'>
@@ -76,7 +73,6 @@ export const Footer: React.FC = () => {
 					</div>
 				</div>
 
-				{/* Column 2: Links */}
 				<div className='footer-column'>
 					<h3 className='footer-column-title'>LÄNKAR</h3>
 					<nav className='footer-links-list'>
@@ -99,7 +95,6 @@ export const Footer: React.FC = () => {
 					</nav>
 				</div>
 
-				{/* Column 3: Services */}
 				<div className='footer-column'>
 					<h3 className='footer-column-title'>TJÄNSTER</h3>
 					<div className='footer-links-list'>
@@ -122,7 +117,6 @@ export const Footer: React.FC = () => {
 					</div>
 				</div>
 
-				{/* Column 4: Questions */}
 				<div className='footer-column'>
 					<h3 className='footer-column-title'>HAR DU FRÅGOR?</h3>
 					<div className='footer-contact-list'>

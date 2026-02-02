@@ -1,19 +1,23 @@
-import React from 'react';
 import {
 	ClipboardList,
 	ShieldCheck,
 	PaintRoller,
 	Sparkles,
+	type LucideIcon,
 } from 'lucide-react';
 import './OurProcessSection.css';
 
-// A sub-component for each step
-const ProcessStep: React.FC<{
-	icon: React.ElementType;
+const ProcessStep = ({
+	icon: Icon,
+	step,
+	title,
+	description,
+}: {
+	icon: LucideIcon;
 	step: string;
 	title: string;
 	description: string;
-}> = ({ icon: Icon, step, title, description }) => {
+}) => {
 	return (
 		<div className='process-step'>
 			<div className='process-step-icon-wrapper'>

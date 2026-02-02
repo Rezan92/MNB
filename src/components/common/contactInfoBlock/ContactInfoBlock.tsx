@@ -1,8 +1,8 @@
 import './ContactInfoBlock.css';
+import { type LucideIcon } from 'lucide-react';
 
 interface ContactInfoBlockProps {
-	// We pass the icon component itself as a prop
-	icon: React.ElementType;
+	icon: LucideIcon;
 	bold?: string;
 	title: string;
 	subtitle: string;
