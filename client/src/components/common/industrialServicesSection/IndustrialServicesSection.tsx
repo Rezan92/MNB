@@ -37,13 +37,13 @@ export const IndustrialServicesSection = () => {
 				<div className='industrial-services-stats-wrapper'>
 					<StatCard
 						icon={HardHat}
-						count='200'
+						count='136'
 						label='PROJEKT SLUTFÖRDA'
 						variant='primary'
 					/>
 					<StatCard
 						icon={Smile}
-						count='250'
+						count='128'
 						label='NÖJDA KUNDER'
 						variant='light'
 					/>
