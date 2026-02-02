@@ -26,8 +26,8 @@ export const ContactDetails: React.FC = () => {
 				<ContactInfoBlock
 					icon={Mail}
 					bold='E-post:'
-					title='ninos.yousef@outlook.com'
-					subtitle='Få en detaljerad offert'
+					title='info@stjarnbyggmaleri.se'
+					subtitle='Kontakta oss för en offert'
 				/>
 				<ContactInfoBlock
 					icon={MapPin}

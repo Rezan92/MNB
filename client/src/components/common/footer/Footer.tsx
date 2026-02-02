@@ -136,7 +136,7 @@ export const Footer: React.FC = () => {
 						/>
 						<ContactItem
 							icon={<Mail size={20} />}
-							text='ninos.yousef@outlook.com'
+							text='info@stjarnbyggmaleri.se'
 						/>
 					</div>
 				</div>
