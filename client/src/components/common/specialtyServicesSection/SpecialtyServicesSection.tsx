@@ -2,11 +2,13 @@ import React from 'react';
 import { Check } from 'lucide-react';
 import './SpecialtyServicesSection.css';
 
-// A sub-component for each item
 const SpecialtyItem: React.FC<{ title: string }> = ({ title }) => {
 	return (
 		<div className='specialty-item'>
-			<Check size={20} className='specialty-item-icon' />
+			<Check
+				size={20}
+				className='specialty-item-icon'
+			/>
 			<span className='specialty-item-title'>{title}</span>
 		</div>
 	);
@@ -14,24 +16,27 @@ const SpecialtyItem: React.FC<{ title: string }> = ({ title }) => {
 
 export const SpecialtyServicesSection: React.FC = () => {
 	const services = [
-		'Trim & Door Painting',
-		'Cabinet Painting',
-		'Drywall Texture Matching',
-		'Move-In / Move-Out Painting',
-		'Accent Walls',
+		'Målning av lister & dörrar',
+		'Kökslackering & Målning av luckor',
+		'Spackling & Väggstruktur',
+		'Flyttmålning',
+		'Fondväggar & Dekorativa tekniker',
 	];
 
 	return (
 		<section className='specialty-services-section'>
 			<div className='specialty-services-header'>
-				<span className='specialty-services-subtitle'>BEYOND THE BASICS</span>
+				<span className='specialty-services-subtitle'>MER ÄN BARA BASIKEN</span>
 				<h2 className='specialty-services-title'>
-					Comprehensive Finishing Services
+					Omfattande Finsnickerier & Måleri
 				</h2>
 			</div>
 			<div className='specialty-services-grid'>
 				{services.map((service) => (
-					<SpecialtyItem key={service} title={service} />
+					<SpecialtyItem
+						key={service}
+						title={service}
+					/>
 				))}
 			</div>
 		</section>

@@ -34,8 +34,8 @@ export const ProjectGallerySection = () => {
 	return (
 		<section className='project-gallery-section'>
 			<div className='project-gallery-header'>
-				<span className='project-gallery-subtitle'>OUR WORK</span>
-				<h2 className='project-gallery-title'>A Showcase of Quality</h2>
+				<span className='project-gallery-subtitle'>VÅRT ARBETE</span>
+				<h2 className='project-gallery-title'>Ett urval av våra projekt</h2>
 			</div>
 
 			{/* Filter Dropdown */}
@@ -44,7 +44,7 @@ export const ProjectGallerySection = () => {
 					htmlFor='project-filter'
 					className='project-filter-label'
 				>
-					Filter by service:
+					Filtrera efter tjänst:
 				</label>
 				<div className='project-filter-select-container'>
 					<select

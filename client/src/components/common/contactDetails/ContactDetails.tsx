@@ -5,44 +5,41 @@ import { Button } from '../button/Button';
 import { Phone, MapPin, Mail, Clock } from 'lucide-react';
 
 export const ContactDetails: React.FC = () => {
-	// We'll use the number from your TopBar
-	const phoneNumber = '17737990006'; // Added '1' for international WhatsApp format
-	const phoneDisplay = '773-799-0006';
+	const phoneNumber = '46729112531';
+	const phoneDisplay = '072-911 25 31';
 	const whatsappLink = `https://wa.me/${phoneNumber}`;
-
 	return (
 		<div className='contact-details-wrapper'>
-			<h2 className='contact-details-title'>Get in Touch</h2>
+			<h2 className='contact-details-title'>Kontakta Oss</h2>
 			<p className='contact-details-intro'>
-				We're here to help transform your space. Contact us today for a free,
-				no-obligation estimate. We respond to all inquiries within 24 business
-				hours.
+				Vi hjälper dig att förvandla ditt hem. Kontakta oss idag för en
+				kostnadsfri offert. Vi svarar normalt inom 24 timmar.
 			</p>
 
 			<div className='contact-details-blocks'>
 				<ContactInfoBlock
 					icon={Phone}
-					bold='Call or Text: '
+					bold='Ring eller SMS:'
 					title={phoneDisplay}
-					subtitle='Mon-Fri, 8:00 AM - 6:00 PM'
+					subtitle='Mån-Fre, 08:00 - 18:00'
 				/>
 				<ContactInfoBlock
 					icon={Mail}
-					bold='Email Us:'
-					title='info@rayprofinish.com' // Placeholder email
-					subtitle='Get a detailed estimate'
+					bold='E-post:'
+					title='ninos.yousef@outlook.com'
+					subtitle='Få en detaljerad offert'
 				/>
 				<ContactInfoBlock
 					icon={MapPin}
-					bold='Service Area:'
-					title='Chicagoland Suburbs'
-					subtitle='Serving Wheaton, Lombard & more'
+					bold='Serviceområde:'
+					title='Stockholms län'
+					subtitle='Vi utför arbeten i hela Stockholm med omnejd'
 				/>
 				<ContactInfoBlock
 					icon={Clock}
-					bold='Business Hours:'
-					title='Mon - Fri: 8:00 AM - 6:00 PM'
-					subtitle='Sat: 9:00 AM - 1:00 PM, Sun: Closed'
+					bold='Öppettider:'
+					title='Mån - Fre: 08:00 - 18:00'
+					subtitle='Lör: 09:00 - 13:00, Sön: Stängt'
 				/>
 			</div>
 
@@ -52,8 +49,7 @@ export const ContactDetails: React.FC = () => {
 				variant='dark'
 				className='whatsapp-btn'
 			>
-				{/* You can add a WhatsApp icon here later if you import one */}
-				Contact Us via WhatsApp
+				Kontakta oss via WhatsApp
 			</Button>
 		</div>
 	);

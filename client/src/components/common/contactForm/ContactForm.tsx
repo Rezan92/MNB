@@ -11,9 +11,9 @@ export const ContactForm: React.FC = () => {
 
 	return (
 		<div className='contact-form-wrapper'>
-			<h2 className='contact-form-title'>Send Us a Message</h2>
+			<h2 className='contact-form-title'>Skicka ett meddelande</h2>
 			<p className='contact-form-intro'>
-				Prefer to write? Fill out the form below and we'll get back to you.
+				Fyll i formuläret nedan så återkommer vi till dig så snart som möjligt.
 			</p>
 			<form
 				className='contact-form'
@@ -21,7 +21,7 @@ export const ContactForm: React.FC = () => {
 			>
 				<div className='form-group-grid'>
 					<div className='form-group'>
-						<label htmlFor='name'>Full Name*</label>
+						<label htmlFor='name'>Fullständigt namn*</label>
 						<input
 							type='text'
 							id='name'
@@ -30,7 +30,7 @@ export const ContactForm: React.FC = () => {
 						/>
 					</div>
 					<div className='form-group'>
-						<label htmlFor='phone'>Phone</label>
+						<label htmlFor='phone'>Telefonnummer</label>
 						<input
 							type='tel'
 							id='phone'
@@ -39,7 +39,7 @@ export const ContactForm: React.FC = () => {
 					</div>
 				</div>
 				<div className='form-group'>
-					<label htmlFor='email'>Email*</label>
+					<label htmlFor='email'>E-post*</label>
 					<input
 						type='email'
 						id='email'
@@ -48,31 +48,27 @@ export const ContactForm: React.FC = () => {
 					/>
 				</div>
 				<div className='form-group'>
-					<label htmlFor='service'>What service do you need?*</label>
+					<label htmlFor='service'>Vilken tjänst är du intresserad av?*</label>
 					<select
 						id='service'
 						name='service'
 						required
 					>
-						<option value=''>-- Please select a service --</option>
-						<option value='Interior Painting'>Interior Painting</option>
-						<option value='Drywall Repair & Patching'>
-							Drywall Repair & Patching
-						</option>
-						<option value='Drywall Installation'>Drywall Installation</option>
-						<option value='Specialty (Cabinets, Trim, etc.)'>
-							Specialty (Cabinets, Trim, etc.)
-						</option>
-						<option value='Other'>Other / Not Sure</option>
+						<option value=''>-- Vänligen välj en tjänst --</option>
+						<option value='Måleri'>Måleri (Inne/Ute)</option>
+						<option value='Snickeri'>Snickeri & Bygg</option>
+						<option value='Golvläggning'>Golvläggning</option>
+						<option value='Renovering'>Totalrenovering</option>
+						<option value='Övrigt'>Övrigt</option>
 					</select>
 				</div>
 				<div className='form-group'>
-					<label htmlFor='message'>Project Details*</label>
+					<label htmlFor='message'>Projektbeskrivning*</label>
 					<textarea
 						id='message'
 						name='message'
 						rows={5}
-						placeholder='Please describe your project (e.g., number of rooms, type of damage, etc.)'
+						placeholder='Beskriv ditt projekt (t.ex. antal rum, typ av arbete, önskat startdatum)'
 						required
 					></textarea>
 				</div>
@@ -81,7 +77,7 @@ export const ContactForm: React.FC = () => {
 					variant='primary'
 					className='contact-submit-btn'
 				>
-					Send Message
+					Skicka meddelande
 				</Button>
 			</form>
 		</div>

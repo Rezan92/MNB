@@ -6,7 +6,7 @@ function Logo() {
     <a href="/" className="logo-link">
       <img 
         src={logoImage} 
-        alt="Ray Drywall Logo" 
+        alt="Stjärn Bygg & Måleri Logotyp" 
         className="logo-image" 
       />
     </a>

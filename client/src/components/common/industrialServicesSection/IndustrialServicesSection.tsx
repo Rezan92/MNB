@@ -3,8 +3,6 @@ import './IndustrialServicesSection.css';
 import { HardHat, Smile } from 'lucide-react';
 import bgImage from '@/assets/industrialServices/industrialServices.png';
 
-// Using a placeholder for the background image on the right
-
 export const IndustrialServicesSection = () => {
 	return (
 		<section className='industrial-services-section'>
@@ -15,39 +13,38 @@ export const IndustrialServicesSection = () => {
 				{' '}
 			</div>
 			<div className='industrial-services-section-container'>
-				{/* Left Column (Text) */}
 				<div className='industrial-services-left-content'>
 					<span className='industrial-services-subtitle'>
-						A COMMITMENT TO QUALITY
+						ETT ENGAGEMANG FÖR KVALITET
 					</span>
 					<h2 className='industrial-services-title'>
-						The Difference is in the Details
+						Skillnaden ligger i detaljerna
 					</h2>
 					<p className='industrial-services-description'>
-						A great finish is only possible with great preparation. We take the
-						time to properly prep every surface, protect your furniture, and
-						ensure our work area is spotless at the end of each day.
+						En perfekt finish är endast möjlig med ett noggrant underarbete. Vi
+						lägger ner den tid som krävs för att förbereda varje yta, skydda
+						dina möbler och se till att arbetsplatsen är fläckfri vid dagens
+						slut.
 					</p>
 					<p className='industrial-services-description'>
-						We use high-quality materials and professional techniques to deliver
-						a final product that not only looks beautiful but is built to last.
-						Your satisfaction is our top priority.
+						Vi använder material av högsta kvalitet och beprövade
+						hantverkstekniker för att leverera ett slutresultat som inte bara är
+						vackert, utan byggt för att hålla. Din nöjdhet är vår högsta
+						prioritet.
 					</p>
 				</div>
-
-				{/* Right Column (Image + Stats) */}
 
 				<div className='industrial-services-stats-wrapper'>
 					<StatCard
 						icon={HardHat}
 						count='200'
-						label='PROJECT COMPLETED'
+						label='PROJEKT SLUTFÖRDA'
 						variant='primary'
 					/>
 					<StatCard
 						icon={Smile}
 						count='250'
-						label='HAPPY CUSTOMERS'
+						label='NÖJDA KUNDER'
 						variant='light'
 					/>
 				</div>
