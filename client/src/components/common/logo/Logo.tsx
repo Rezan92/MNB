@@ -1,4 +1,4 @@
-import logoImage from '@/assets/logo/Ray Drywall 1.png'; 
+import logoImage from '@/assets/logo/logo1-2.png'; 
 import './Logo.css';
 
 function Logo() {
