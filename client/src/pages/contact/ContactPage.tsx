@@ -7,7 +7,7 @@ const ContactPage = () => {
 	return (
 		<div className='contact-page-wrapper'>
 			{/* 1. Page Title */}
-			<PageHeader title='Contact Us' />
+			<PageHeader title='Kontakta oss' />
 
 			{/* 2. Main Content Grid */}
 			<div className='contact-page-grid'>

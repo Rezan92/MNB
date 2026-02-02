@@ -10,7 +10,7 @@ function AboutPage() {
 	return (
 		<div className='about-page-wrapper'>
 			{/* 1. Page Title */}
-			<PageHeader title='About Us' />
+			<PageHeader title='Om oss' />
 
 			{/* 2. Our Story (Re-using the component from the Homepage) */}
 			<AboutSection />

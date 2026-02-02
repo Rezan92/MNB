@@ -11,7 +11,7 @@ const ProjectsPage = () => {
 			{' '}
 			{/* <-- Add the wrapper class */}
 			{/* 1. Page Title */}
-			<PageHeader title='Our Work' />
+			<PageHeader title='Vårt arbete' />
 			{/* 2. The new Filterable Project Gallery */}
 			<ProjectGallerySection />
 			{/* 3. How We Work (Crucial for high-value clients) */}
